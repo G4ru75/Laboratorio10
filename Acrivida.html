@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1</title>
+</head>
+<body>
+    <script>
+        let n = 1; 
+        while (n != -1)
+        {
+            let Calificacion = parseFloat(prompt("Ingrese su calificacion")); 
+
+            if(Calificacion > 100 || Calificacion < 0){
+                alert("Digite una nota valida entre 0 o 100"); 
+            }else if(Calificacion >= 90){
+                alert("Aprobado con honores"); 
+            }else if(Calificacion >= 70){
+                alert("Aprobado"); 
+            }else{
+                alert("Reprobado"); 
+            }   
+
+            n = parseInt(prompt("Ingrese -1 si quiere salir o 1 para agregar otra calificacion")); 
+        }
+        
+    </script>
+    
+</body>
+</html>

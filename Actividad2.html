@@ -6,28 +6,15 @@
     <title>Actividad 2</title>
 </head>
 <body>
-    <script>
-        let a = 5, b = 5;
+    <Script>
+        let n = 1; 
 
-        console.log("Suma de a y b: ", a + b); 
-        console.log("Resta de a y b: ", a - b);
-        console.log("Multiplicacin de a y b: ", a * b);
-        console.log("Divicion de a y b: ", a / b);
+        while(n != -1){
 
-        let comparacion1 = a == b; 
-        let comparacion2 = a != b; 
-        let comparacion3 = a > b; 
-        let comparacion4 = a < b; 
-        let comparacion5 = a >= b;
-        let comparacion6 = a <= b;
-
-        console.log("¿a es igual que b?: ",comparacion1);
-        console.log("¿a no es igual de b?: ",comparacion2);
-        console.log("¿a es mayor que b?: ",comparacion3);
-        console.log("¿a es menor que b?: ",comparacion4);
-        console.log("¿a es mayor o igual que b?: ",comparacion5);
-        console.log("¿a es menor o igual que b?: ",comparacion6);
-
-    </script>
+            let Numero = parseInt(prompt("Digite cualquier numero: ")); alert(`El numero ${Numero} es ${Numero % 2 == 0 ? 'par' : 'impar'}`);
+            
+            n = parseInt(prompt("Ingrese -1 si quiere salir o 1 para agregar otra calificacion")); 
+        }
+    </Script>
 </body>
 </html>

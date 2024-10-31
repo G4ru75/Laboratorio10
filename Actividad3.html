@@ -7,27 +7,20 @@
 </head>
 <body>
     <script>
+        let n = 1; 
 
-        let EsMayorDeEdad = true;
-        let TieneLicencia = true;
-        let Mensaje; 
+        while(n != -1){
+            let Monto = parseFloat(prompt("Digite el su monto total de su compra: ")); 
+            
+            if( Monto > 100 ){
+                Monto -= Monto * 0.1 ; 
+                alert(`Su precio final sera de: ${Monto}, Se le aplico un 10% de descuento`); 
+            }else{
+                alert(`Su monto final es de: ${Monto}`); 
+            }
 
-        if (EsMayorDeEdad && TieneLicencia) {
-            console.log("¡Bienvenido! Puedes conducir.");
-        } else {
-            console.log("Lo siento, no cumples con los requisitos para conducir.");
+            n = parseInt(prompt("Ingrese -1 si quiere salir o 1 para agregar otra calificacion")); 
         }
-
-
-        if(EsMayorDeEdad && TieneLicencia)
-        {
-            Mensaje = "Bienvenido, si puedes conducir"; 
-        }else{
-            Mensaje = "Rechazado, no puedes conducir sin antes cumplir con los requerimientos";
-        }
-
-        console.log(Mensaje); 
-
     </script>
 </body>
 </html>
